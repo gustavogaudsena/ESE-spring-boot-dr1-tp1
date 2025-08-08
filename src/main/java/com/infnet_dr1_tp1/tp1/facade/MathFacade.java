@@ -7,24 +7,24 @@ import org.springframework.stereotype.Service;
 @Service
 public class MathFacade {
 
-    public MathResult add(double firstNumber, double secondNumber) {
-        double result = firstNumber + secondNumber;
-        return new MathResult(OperationType.ADDITION, firstNumber, secondNumber, result);
+    public MathResult add(double n1, double n2) {
+        double result = n1 + n2;
+        return new MathResult(OperationType.ADDITION, n1, n2, result);
     }
 
-    public MathResult subtract(double firstNumber, double secondNumber) {
-        double result = firstNumber - secondNumber;
-        return new MathResult(OperationType.SUBTRACTION, firstNumber, secondNumber, result);
+    public MathResult subtract(double n1, double n2) {
+        double result = n1 - n2;
+        return new MathResult(OperationType.SUBTRACTION, n1, n2, result);
     }
 
-    public MathResult multiply(double firstNumber, double secondNumber) {
-        double result = firstNumber * secondNumber;
-        return new MathResult(OperationType.MULTIPLICATION, firstNumber, secondNumber, result);
+    public MathResult multiply(double n1, double n2) {
+        double result = n1 * n2;
+        return new MathResult(OperationType.MULTIPLICATION, n1, n2, result);
     }
 
-    public MathResult divide(double firstNumber, double secondNumber) {
-        double result = firstNumber / secondNumber;
-        return new MathResult(OperationType.DIVISION, firstNumber, secondNumber, result);
+    public MathResult divide(double n1, double n2) {
+        double result = n1 / n2;
+        return new MathResult(OperationType.DIVISION, n1, n2, result);
     }
 
     public MathResult exponentiate(double base, double exponent) {
